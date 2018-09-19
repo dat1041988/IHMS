@@ -10,7 +10,7 @@ RUN gem install sass
 WORKDIR /home/mean
 
 # Install Mean.JS Prerequisites
-RUN npm install -g grunt-cli
+RUN npm install -g grunt-cli@1.0.1
 RUN npm install grunt@1.0.2 --save-dev
 RUN npm install -g bower
 
