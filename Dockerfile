@@ -3,6 +3,8 @@ FROM node:0.12
 # Install gem sass for  grunt-contrib-sass
 RUN apt-get update -qq && apt-get install -y build-essential
 RUN apt-get install -y ruby
+RUN apt-get install ruby-dev
+RUN apt-get install ruby2.1-dev
 RUN gem install sass
 
 WORKDIR /home/mean
